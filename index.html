@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjetas code artist</title>
+    <style type="text/css">
+        +{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #e2a5dd;
+        }
+        img{
+            width: 100%;
+        }
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            padding: 2em;
+            justify-content: center;
+            flex-grow: 5;
+        }
+        .designer{
+            width: 300px;
+            background: rgba(245,245,245,0.8);
+            margin: 1em;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .cont_img{
+            height: 300px;
+            border-radius: 30px 30px 0 0;
+        }
+        .cont_img img{
+            border-radius: 30px 30px 0 0;
+            filter: saturateblur(100%);
+            mix-blend-mode: lighten;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            overflow: hidden;
+        }
+        header{
+            align-items: baseline;
+            display: flex;
+            justify-content: space-between;
+            color: cadetblue;
+            padding: 0 0 0.2em 0;
+            margin: .5em 1em;
+            border-bottom: 1px solid #ec65f7;
+        }
+        h3{
+           font-weight: 600;
+           font-style: normal;
+        }
+        h4{
+           font-weight: 500;
+           font-style: italic;
+        }
+        .text{
+            margin: 1em 1em 0.5em 1em;
+            color: darkslategray;
+            text-align: justify;
+            hyphens: auto;
+            font-size: 0.8em;
+            line-height: 1.6em;  
+            flex-grow: 1;
+        }
+        .pie{
+            border-radius: 0 0 30px 30px;
+            background-color: whitesmoke;
+            color: cadetblue;
+            font-style: italic;
+            font-size: 1em;
+            padding: 1em 1em 0.5em 1em;
+            flex-grow: 5;
+        }
+        @media (max-width: 600px){
+            body{
+                font-size: 14px;
+            }
+            .contenedor{
+                flex-direction: column;
+            }
+            designer{
+                width: 30em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="designer">
+            <div class="cont_img">
+                <img src="img/milton_glaser.jpg">
+            </div>
+            <header>
+                <h3>Milton Glaser</h3>
+                <h4>1929</h4>
+            </header>
+            <div class="text">
+                <p>Nacido el 26 de junio de 1929 en el Bronx de Nueva York, es un ilustrador y diseñador muy prolífico conocido sobre todo por sus diseños para discos y libros.
+
+Glaser estudió en la conocida Cooper Union entre 1948 y 1951 Y a través de una beca Fulbright, también estudió en la Academia de Bellas Artes de Bolonia, en Italia, donde estuvo con el pintor Giorgio Morandi. Fundó con Seymour Chwast el Push Pin Studio para, en 1974, crear su propia compañía.
+
+Ha creado más de 300 carteles entre los que se cuenta el famoso de Bob Dylan, un símbolo de los años sesenta. Glaser se ha dedicado al diseño editorial y a la identidad corporativa. En el primer campo ha trabajo para publicaciones como Paris Macht, L´Express, Esquire o Village Voice y La Vanguardia (1987-1989) para realizar un cambio en esta publicación coincidiendo con su paso al color.</p>
+            </div>
+            <div class="pie">
+                <p>Obra importante</p>
+                <img src="img/GLASER_01.jpeg" alt="">
+            </div>
+        </div>
+        <div class="designer">
+            <div class="cont_img">
+                <img src="img/carson.jpg" alt="David Carson">
+            </div>
+            <header>
+                <h3>David Carson</h3>
+                <h4>1955</h4>
+            </header>
+            <div class="text">
+                <p>Is an American graphic designer, art director and surfer. He is best known for his innovative magazine design, and use of experimental typography. He was the art director for the magazine Ray Gun, in which he employed much of the typographic and layout approach for which he is known. In particular, his widely imitated aesthetic defined the so-called "grunge typography" era. He attended Cocoa Beach High School, was class president for three years, and still considers Cocoa Beach, Florida to be the place he is "most from".</p>
+                <p>He attended San Diego State University, graduating with "Honors and Distinction" a Bachelor of Arts in Sociology. Carson's first contact with graphic design was in 1980 at the University of Arizona during a two-week graphics course, taught by Jackson Boelts.From 1982 to 1987, Carson worked as a teacher in Torrey Pines High School in San Diego, California. During that time, he was also a professional surfer, and reached a 9th in the WSA pro 4A division [4] Carson had his own signature model surfboard with Infinity surfboards, and his own signature model fin with rainbow fin co. He still surfs regularly at his property in the Caribbean.</p>
+            </div>
+            <div class="pie">
+                <p>Obra importante</p>
+                <img src="img/CARSON_01.png" alt="">
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
